@@ -1,0 +1,106 @@
+.container{
+	height: 100%;
+	width: 100%;
+	background-color: #202020 ;
+}
+
+nav.menu-lateral{
+	width: 250px;
+	height: 100%;
+	background-color: #202020;
+	border-right: 4px solid #4169E1;
+	position: sticky;
+	top: 0;
+	left: 0;
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	padding: 0px 0px 40px 0px;
+	padding-bottom: 12px;
+	background-color: black;
+
+	.logo-txt{
+		font-size: 150px;
+		font-family: sans-serif;
+		font-weight: bold;
+		color:white;
+		text-shadow: -10px 8px 2px #4169E1;
+	}
+	.logo-name{
+		font-size: 45px;
+		font-weight: 400;
+		font-family: sans-serif;
+		color:#4169E1;
+		margin: -25px 15px 0px 0px;
+		padding-bottom: 12px;
+	}
+
+	.logo-description{
+		font-size: 20px;
+		font-weight:400;
+		font-style: italic;
+		color:#3a3a3a;
+		padding-right: 10px;
+	}
+}
+
+ul{
+	list-style: none;
+	padding: 0px 0 40px 2%;
+
+	li.item-menu{
+		transition: .2s;
+	}
+
+	li.item-menu:hover{
+		background-color: #4169E1;
+	}
+
+	li.item-menu a{
+		display: flex;
+		align-items: flex-end;
+		color: white;
+		text-decoration: none;
+		font-size: 20px;
+		padding: 20px 4%;
+		margin-bottom: 30px;
+		gap: 30px;
+
+		.icon{
+			i{
+				font-size: 30px;
+			}
+		}
+	}
+
+
+	li.item-socialMidias a{
+		display: flex;
+		align-items: flex-end;
+		color: white;
+		text-decoration: none;
+		font-size: 20px;
+		padding: 20px 4%;
+		margin-bottom: 30px;
+		gap: 40px;
+		cursor: default;
+		
+		.icon{
+			i{
+				cursor: pointer;
+				font-size: 40px;
+			}
+		}
+
+		.icon:hover{
+			i{
+				color: #4169E1;
+			}
+		}
+	}
+
+}
