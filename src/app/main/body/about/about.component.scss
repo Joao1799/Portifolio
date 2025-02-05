@@ -1,5 +1,6 @@
 .container {
-	background-color: #202020;
+	background: #202020;
+	background: radial-gradient(circle farthest-side at left center, #202020 36%, #303030 87%);	
 	width: 100%;
 	color: white;
 	padding: 2vw; 
@@ -17,12 +18,11 @@
 			flex-direction: column;
 			
 			.text {
-				font-size: 5.15vw; 
+				font-size: 4.65vw; 
 				font-weight: bold;
-				letter-spacing: 0.3125vw; 
 				color: white;
 				text-shadow: 0px 0px 0px rgb(255, 255, 255),
-				-0.125rem 0.25rem 0px rgba(179, 177, 177, 0.637); 
+				-0.15rem 0.25rem 0px rgba(179, 177, 177, 0.637); 
 			}
 			
 			a {
@@ -47,11 +47,23 @@
 		font-size: 1vw; 
 	}
 
+	.footerCard{
+		display: flex;
+		justify-content: right;
+		width: 100%;
+		padding-top: 12px;
+	}
+
 	::ng-deep {
 		.p-card-title {
 			color: #4169E1;
 			font-size: 1.35vw; 
 			font-weight: bold;
+		}
+
+		.p-togglebutton-label, .p-togglebutton-icon {
+			color: #4169E1;
+			font-size: 0.8vw; 
 		}
 	}
 }
