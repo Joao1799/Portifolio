@@ -1,7 +1,42 @@
-.container{
-	background: #202020;
-	background: radial-gradient(circle farthest-side at left center, #202020 36%, #303030 87%);	
-	width: 100vw;
-	
+.container {
+  width: 100%;
+  padding: 48px;
 
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  ::ng-deep {
+    p-tabs {
+      width: 100%;
+    }
+    .p-card-title {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 24px;
+    }
+    .p-tab-active {
+      border-color: #4169e1;
+      color: #4169e1;
+    }
+
+    p-tab span {
+      font-size: 20px;
+    }
+
+	p.m-0{
+		font-size: 20px;
+	}
+
+    .p-togglebutton-label,
+    .p-togglebutton-icon {
+      color: #4169e1;
+      font-size: 0.8vw;
+    }
+    --p-tabs-active-bar-background: #4169e1;
+  }
 }
