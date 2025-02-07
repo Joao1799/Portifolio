@@ -1,82 +1,93 @@
 <div class="container">
-	<p-card >
-	 	<ng-template #title> 
-			<span>{{header}}</span>
-			<p-selectbutton 
-			[options]="txtOptions" [(ngModel)]="selectedLanguage" 
-			(onChange)="translateTXT($event)" optionLabel="label" 
-			optionValue="value" aria-labelledby="basic">
-			</p-selectbutton>
-		</ng-template>
+	<div class="skills">
+		<p-card >
+			<ng-template #title> 
+			   <span>{{titleCard}}</span>
+			   <p-selectbutton 
+			   [options]="txtOptions" [(ngModel)]="selectedLanguage" 
+			   (onChange)="translateTXT($event)" optionLabel="label" 
+			   optionValue="value" aria-labelledby="basic">
+			   </p-selectbutton>
+		   </ng-template>
+   
+		   <p-tabs value="0" >
+			   <p-tablist>
+				   <ng-template #previcon>
+					   <i class="pi pi-minus"></i>
+				   </ng-template>
+				   <p-tab value="0">
+					   <p-avatar image="assets/programing.png" shape="circle"/>
+					   <span class="font-bold whitespace-nowrap">Angular</span>
+				   </p-tab>
+				   <p-tab value="1">
+					   <p-avatar image="assets/javascript.png" shape="circle" />
+					   <span class="font-bold whitespace-nowrap">Javascript</span>
+				   </p-tab>
+				   <p-tab value="2">
+					   <p-avatar image="assets/java1.png" shape="circle" />
+					   <span class="font-bold whitespace-nowrap">Java</span>
+				   </p-tab>
+				   <p-tab value="3">
+					   <p-avatar image="assets/social.png" shape="circle" />
+					   <span class="font-bold whitespace-nowrap">GitHub</span>
+				   </p-tab>
+				   <p-tab value="4">
+					   <p-avatar image="assets/abilities.png" shape="circle" />
+					   <span class="font-bold whitespace-nowrap">Soft Skills</span>
+				   </p-tab>
+   
+				   <ng-template #nexticon>
+					   <i class="pi pi-plus"></i>
+				   </ng-template>
+			   </p-tablist>
+			   <p-tabpanels>
+				   <p-tabpanel value="0">
+					   <p class="m-0" [innerHTML]="angularText"></p>
+				   </p-tabpanel>
+				   <p-tabpanel value="1">
+					   <p class="m-0" [innerHTML]="javaScriptText"></p>
+				   </p-tabpanel>
+				   <p-tabpanel value="2">
+					   <p class="m-0" [innerHTML]="javaText"></p>
+				   </p-tabpanel>
+				   <p-tabpanel value="3">
+					   <p class="m-0" [innerHTML]="gitSkillsText"></p>
+				   </p-tabpanel>
+				   <p-tabpanel value="4">
+					   <p class="m-0" [innerHTML]="softSkillsText"></p>
+				   </p-tabpanel>
+			   </p-tabpanels>
+		   </p-tabs>
+	   </p-card>
+	</div>
 
-		<p-tabs value="0" scrollable >
-			<p-tablist>
-				<ng-template #previcon>
-					<i class="pi pi-minus"></i>
-				</ng-template>
-				<p-tab value="0">
-					<p-avatar image="assets/programing.png" shape="circle"/>
-					<span class="font-bold whitespace-nowrap">Angular</span>
-				</p-tab>
-				<p-tab value="1">
-					<p-avatar image="assets/nodejs.png" shape="circle" />
-					<span class="font-bold whitespace-nowrap">NodeJS</span>
-				</p-tab>
-				<p-tab value="2">
-					<p-avatar image="assets/python.png" shape="circle" />
-					<span class="font-bold whitespace-nowrap">Python</span>
-				</p-tab>
-				<p-tab value="3">
-					<p-avatar image="assets/github (1).png" shape="circle" />
-					<span class="font-bold whitespace-nowrap">GitHub</span>
-				</p-tab>
-				<p-tab value="4">
-					<p-avatar image="assets/abilities.png" shape="circle" />
-					<span class="font-bold whitespace-nowrap">Soft Skills</span>
-				</p-tab>
+	<div class="certificate">
+		<p-card [style]="{ width: '200px', overflow: 'hidden' }">
+			<ng-template pTemplate="header">
+			  <img 
+				alt="Certificado Java" 
+				class="custom-image"
+				src="assets/javaCertificado.jpeg" 
+				style="width: 100%; height: auto; max-height: 150px; object-fit: cover;"
+			  />
+			</ng-template>
+			<ng-template pTemplate="title">Certificado Java</ng-template>
+			<ng-template pTemplate="subtitle"> Carga de 60 horas </ng-template>
+			<p></p>
+		  </p-card>
 
-				<ng-template #nexticon>
-					<i class="pi pi-plus"></i>
-				</ng-template>
-			</p-tablist>
-			<p-tabpanels>
-				<p-tabpanel value="0">
-					<!-- <span class="title"> Desenvolvimento de Interfaces Web com Angular</span> -->
-					<p class="m-0" [innerHTML]="angularText"></p>
-				</p-tabpanel>
-				<p-tabpanel value="1">
-					<p class="m-0">
-						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-						aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-						Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-						dolores eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius
-						modi.
-					</p>
-				</p-tabpanel>
-				<p-tabpanel value="2">
-					<p class="m-0">
-						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
-						atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
-						sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum
-						facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-						impedit quo minus.
-					</p>
-				</p-tabpanel>
-				<p-tabpanel value="3">
-					<p class="m-0" [innerHTML]="gitSkillsText"></p>
-				</p-tabpanel>
-				<p-tabpanel value="4">
-					<p class="m-0">
-						
-						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
-						atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
-						sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum
-						facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-						impedit quo minus.
-					</p>
-				</p-tabpanel>
-			</p-tabpanels>
-		</p-tabs>
-
-	</p-card>
+		  <p-card [style]="{ width: '200px', overflow: 'hidden' }">
+			<ng-template pTemplate="header">
+			  <img 
+				alt="Certificado Java" 
+				class="custom-image"
+				src="assets/pythonCertificado.jpeg" 
+				style="width: 100%; height: auto; max-height: 150px; object-fit: cover;"
+			  />
+			</ng-template>
+			<ng-template pTemplate="title">Certificado Python</ng-template>
+			<ng-template pTemplate="subtitle"> Carga de 80 horas </ng-template>
+			<p></p>
+		  </p-card>
+	</div>
 </div>
