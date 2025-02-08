@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -14,9 +15,16 @@ export class HeaderComponent {
 
   constructor(private router: Router) {}
 
+  ngOnInit() {
+    this.router.events.pipe(filter(carregando => carregando instanceof NavigationEnd)).subscribe((carregou) => {
+      const abas = carregou.url.split('/').filter(aba => aba);
+      if (abas.length > 0) {
+        this.menuSelecionadoAtual = abas[abas.length - 1];
+      }
+    });
+  }
+
   selecionarMenu(opcao: string) {
-    this.menuSelecionado.emit(opcao);
-    this.menuSelecionadoAtual = opcao;  
     this.router.navigate([`/${opcao.toLowerCase()}`]); 
   }
 

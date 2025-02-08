@@ -7,36 +7,40 @@
 		</div>
 
 		<ul>
-			<li class="item-menu" [ngClass]="{'ativo': menuSelecionadoAtual === 'About'}">
+			<li class="item-menu" [ngClass]="{'ativo': menuSelecionadoAtual === 'about'}">
 				<a (click)="selecionarMenu('About')" routerLink="/about">
 					<span class="icon"><i class="pi pi-user"></i></span>
 					<span class="txt-link">About</span>
 				</a>
 			</li>
-			<li class="item-menu" [ngClass]="{'ativo': menuSelecionadoAtual === 'Skills'}">
+			<li class="item-menu" [ngClass]="{'ativo': menuSelecionadoAtual === 'skills'}">
 				<a (click)="selecionarMenu('Skills')" routerLink="/skills">
 					<span class="icon"><i class="pi pi-objects-column"></i></span>
 					<span class="txt-link">My Skills</span>
 				</a>
 			</li>
-			<li class="item-menu" [ngClass]="{'ativo': menuSelecionadoAtual === 'Work'}">
+			<li class="item-menu" [ngClass]="{'ativo': menuSelecionadoAtual === 'work'}">
 				<a (click)="selecionarMenu('Work')" routerLink="/work">
 					<span class="icon"><i class="pi pi-briefcase"></i></span>
 					<span class="txt-link">Work</span>
 				</a>
 			</li>
-			<li class="item-menu" [ngClass]="{'ativo': menuSelecionadoAtual === 'Contact'}">
+			<li class="item-menu" [ngClass]="{'ativo': menuSelecionadoAtual === 'contact'}">
 				<a (click)="selecionarMenu('Contact')" routerLink="/contact">
 					<span class="icon"><i class="pi pi-phone"></i></span>
 					<span class="txt-link">Contact</span>
 				</a>
 			</li>
 			<li class="item-socialMidias">
-				<a href="#">
-					<span class="icon"><i class="pi pi-linkedin"></i></span>
-					<span class="icon"><i class="pi pi-instagram"></i></span>
-					<span class="icon"><i class="pi pi-whatsapp"></i></span>
-				</a>
+					<a href="https://www.linkedin.com/in/joão-victor-68240a197" target="_blank">
+						<span class="icon"><i class="pi pi-linkedin"></i></span>
+					</a>
+					<a href="https://github.com/Joao1799" target="_blank">
+						<span class="icon"><i class="pi pi-github"></i></span>
+					</a>
+					<a href="">
+						<span class="icon"><i class="pi pi-whatsapp"></i></span>
+					</a>
 			</li>
 		</ul>
 
