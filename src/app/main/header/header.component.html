@@ -8,25 +8,25 @@
 
 		<ul>
 			<li class="item-menu" [ngClass]="{'ativo': menuSelecionadoAtual === 'About'}">
-				<a (click)="selecionarMenu('About')">
+				<a (click)="selecionarMenu('About')" routerLink="/about">
 					<span class="icon"><i class="pi pi-user"></i></span>
 					<span class="txt-link">About</span>
 				</a>
 			</li>
 			<li class="item-menu" [ngClass]="{'ativo': menuSelecionadoAtual === 'Skills'}">
-				<a (click)="selecionarMenu('Skills')">
+				<a (click)="selecionarMenu('Skills')" routerLink="/skills">
 					<span class="icon"><i class="pi pi-objects-column"></i></span>
 					<span class="txt-link">My Skills</span>
 				</a>
 			</li>
 			<li class="item-menu" [ngClass]="{'ativo': menuSelecionadoAtual === 'Work'}">
-				<a (click)="selecionarMenu('Work')">
+				<a (click)="selecionarMenu('Work')" routerLink="/work">
 					<span class="icon"><i class="pi pi-briefcase"></i></span>
 					<span class="txt-link">Work</span>
 				</a>
 			</li>
 			<li class="item-menu" [ngClass]="{'ativo': menuSelecionadoAtual === 'Contact'}">
-				<a (click)="selecionarMenu('Contact')">
+				<a (click)="selecionarMenu('Contact')" routerLink="/contact">
 					<span class="icon"><i class="pi pi-phone"></i></span>
 					<span class="txt-link">Contact</span>
 				</a>
