@@ -1,11 +1,18 @@
 .body{
 	display: flex;
 	flex-direction: row;
-	min-height: 100vh;
+	height: 100%;
 	background: radial-gradient(circle farthest-side at left center, #202020 36%, #303030 87%);	
+	// background-color: red;
+}
+.menu{
+	display: flex;
+	min-height:100vh ;
+	height: 100%;
 }
 .main{
 	display: flex;
 	flex-direction: column;
-	
+	width: 100%;
+	border-left: 4px solid #4169E1;
 }

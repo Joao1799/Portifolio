@@ -8,10 +8,6 @@ nav.menu-lateral{
 	width: 250px;
 	height: 100%;
 	background-color: #202020;
-	border-right: 4px solid #4169E1;
-	position: sticky;
-	top: 0;
-	left: 0;
 }
 
 .item-menu.ativo {
@@ -38,7 +34,7 @@ nav.menu-lateral{
 	}
 	.logo-name{
 		font-size: 45px;
-		font-weight: 400;
+		font-weight: bold;
 		font-family: sans-serif;
 		color:#4169E1;
 		margin: -25px 15px 0px 0px;
