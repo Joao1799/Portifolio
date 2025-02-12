@@ -1,1 +1,57 @@
-<p>contact works!</p>
+<div class="container">
+	<div class="main">
+		<div class="left">
+			<div class="groupCard">
+				<div class="cards">
+					<h1>🚀 Inovação e Solução Sob Medida</h1>
+					<p>Você tem uma ideia incrível, mas não sabe como tirá-la do papel? Vamos transformar seu projeto em realidade com tecnologia moderna e soluções personalizadas.</p>
+				</div>
+				<div class="cards">
+					<h1>🤝 Compromisso e Qualidade</h1>
+					<p>Cada linha de código é escrita com dedicação e excelência. Se você busca um desenvolvedor confiável, que entrega qualidade e inovação, estou pronto para ajudar.</p>
+				</div>
+				<div class="cards">
+					<h1>💡 Vamos Criar Algo Juntos!</h1>
+					<p>Tem dúvidas ou quer discutir uma ideia? Entre em contato e vamos encontrar a melhor solução para suas necessidades. O primeiro passo para um grande projeto começa aqui!</p>
+				</div>
+			</div>
+		</div>
+		<div class="right">
+			<div class="header">
+				<h1>Vamos fazer um projeto?</h1>
+			</div>
+			<div class="body">
+				<form [formGroup]="forms">
+					<article>
+						<label for="">Nome Completo:</label>
+						<input pInputText formControlName="nome" />
+					</article>
+					<article>
+						<label for="">Email:</label>
+						<input pInputText formControlName="email" placeholder="Digite seu e-mail" [ngClass]="{'ng-invalid': emailInvalid}">
+					</article>
+					<article>
+						<label for="">Mensagem:</label>
+						<input formControlName="mensagem"  pInputText />
+					</article>
+					<article>
+						<label for="">Tipo de serviço:</label>
+						<p-select [options]="tipoServices" formControlName="servico" optionLabel="tipo" placeholder="Tipo de serviço" />
+					</article>
+					<article>
+						<label for="">Motivo do contato:</label>
+						<p-select [options]="tiposAssunto" formControlName="motivoContato" optionLabel="assunto" placeholder="Selecione um assunto" />
+					</article>
+					<article>
+						<label for="">Orçamento estimado:</label>
+						<p-select [options]="valores" formControlName="valores" optionLabel="valor" placeholder="Selecione um assunto" />
+					</article>
+				</form>
+				<div class="footer">
+					<p-button label="Enviar" (click)="postForm()" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>

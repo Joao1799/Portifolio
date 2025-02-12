@@ -1,0 +1,119 @@
+.container{
+	min-height: 100vh;
+	width: 100%;
+	padding:48px;
+	overflow: auto;
+
+
+
+	.main{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	.groupCard{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		height: 100%;
+		width: 100%;
+		gap: 16px;
+		.cards{
+			display: flex;
+			flex-direction: column;
+			background-color: rgba(100, 100, 100, 0.671);
+			height: auto;
+			border-radius: 10px;
+			box-shadow: -1px 2px 8px rgba(0, 0, 0, 0.741);
+			padding: 8px 16px 16px 16px;
+			gap: 8px;
+
+			h1{
+				font-size: 2rem;
+				white-space: normal;
+				word-wrap: break-word;
+			}
+			
+			p {
+				font-size: 1.4rem;
+				white-space: normal;
+				word-wrap: break-word;
+			}
+		}
+	}
+
+
+	.left,.right{
+		width: 45%;
+		height: 80vh;
+	}
+
+	.right{
+		background-color: #1a1a1a;
+		border-radius: 10px;
+		padding: 32px;
+		box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.741); 
+		width: 35%;
+		height: auto;
+		
+	
+	
+		.header{
+			display: flex;
+			width: 100%;
+			text-align: left;
+			font-size: 1.5rem;
+			padding-bottom: 16px;
+			white-space: normal;
+			word-wrap: break-word;
+		}
+		.body{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+
+
+			label{
+				font-size: 1.1rem;
+				white-space: normal;
+				word-wrap: break-word;
+			}
+
+			article{
+				display: flex;
+				flex-direction: column;
+				gap: 6px;
+				padding-bottom: 16px;
+			}
+		}
+
+		.footer{
+			width: 100%;
+			display: flex;
+			justify-content: right;
+				
+		}
+
+	}	
+	::ng-deep{
+		--p-inputtext-focus-border-color:#4169E1;
+		--p-select-focus-border-color: #4169E1;
+		--p-togglebutton-focus-ring-color:#4169E1;
+
+		.p-select-option.p-select-option-selected{
+			background: #4169e146;	
+		}
+
+		.p-button{
+			background-color: #4169e1;
+			border: 1px solid #4169e1;
+		}
+		.p-button:hover{
+			background-color: #4169e1d7;
+			border: 1px solid #ffffff;
+		}
+	}
+}
