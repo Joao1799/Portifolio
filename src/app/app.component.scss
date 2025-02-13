@@ -10,10 +10,30 @@
 .menu{
 	display: flex;
 	min-height:100vh ;
+	animation: slide 0.75s ease-in ;
+	border-right: 4px solid #4169E1;
+	z-index: 1;
 }
 .main{
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	border-left: 4px solid #4169E1;
+	// border-left: 4px solid #4169E1;
+}
+
+
+@keyframes slide{
+	0%{	
+		opacity: 0.6;
+		transform: translateX(-230px);
+	}
+
+	50%{
+		opacity: 0.75;
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateX(0);
+	}
 }

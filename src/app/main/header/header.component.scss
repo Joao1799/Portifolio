@@ -31,6 +31,7 @@ nav.menu-lateral{
 		font-weight: bold;
 		color:white;
 		text-shadow: -10px 8px 2px #4169E1;
+		animation: slideBotton 1.5s ease-in;
 	}
 	.logo-name{
 		font-size: 45px;
@@ -39,6 +40,7 @@ nav.menu-lateral{
 		color:#4169E1;
 		margin: -25px 15px 0px 0px;
 		padding-bottom: 12px;
+		animation: slideBotton 1.25s ease-in;
 	}
 
 	.logo-description{
@@ -47,6 +49,7 @@ nav.menu-lateral{
 		font-style: italic;
 		color:#3a3a3a;
 		padding-right: 10px;
+		animation: slideBotton 1s ease-in;
 	}
 }
 
@@ -57,6 +60,20 @@ ul{
 	li.item-menu{
 		transition: .2s;
 		cursor: pointer;
+	}
+
+	
+	.one{
+		animation: slide 1s ease-in;
+	}
+	.two{
+		animation: slide 1.25s ease-in;
+	}
+	.three{
+		animation: slide 1.50s ease-in;
+	}
+	.four{
+		animation: slide 1.70s ease-in;
 	}
 
 	li.item-menu:hover{
@@ -97,6 +114,7 @@ ul{
 
 		a{
 			color: white;
+			animation: slideTop 1s ease-in;
 		}
 		
 		.icon{
@@ -114,3 +132,58 @@ ul{
 	}
 
 }
+
+@keyframes slide{
+	0%{	
+		opacity: 0.6;
+		transform: translateX(-230px);
+	}
+
+	50%{
+		opacity: 0.75;
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes scale {
+	0% {
+	  opacity: 0.5;
+	  transform: scale(0.1);
+	}
+  
+	100% {
+	  transform: scale(1);
+	  opacity: 1;
+	}
+  }
+
+@keyframes slideTop{
+	0%{
+		opacity: 0.1;
+		transform: scale(0.1);
+
+	}
+
+	100%{
+		opacity: 1;
+		transform: scale(1);
+	}
+
+}  
+
+@keyframes slideBotton{
+	0%{
+		opacity: 0.1;
+		transform: translateY(-20%);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+}  
