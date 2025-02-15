@@ -1,25 +1,26 @@
 .body{
 	display: flex;
 	flex-direction: row;
-	height: 100%;
+	min-height: 100vh;
+	width: 100%;
+	overflow: hidden;
 	background-image: url('/assets/back/background.svg');
 	background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .menu{
-	display: flex;
-	min-height:100vh ;
 	animation: slide 0.75s ease-in ;
 	border-right: 4px solid #4169E1;
-	z-index: 1;
+	z-index: 100;
+	min-height: 100vh;
 }
 .main{
-	display: flex;
-	flex-direction: column;
 	width: 100%;
-	// border-left: 4px solid #4169E1;
+	min-height: 100vh;
 }
+
+
 
 
 @keyframes slide{

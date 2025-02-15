@@ -31,7 +31,7 @@ nav.menu-lateral{
 		font-weight: bold;
 		color:white;
 		text-shadow: -10px 8px 2px #4169E1;
-		animation: slideBotton 1.5s ease-in;
+		animation: slideBottonHeader 1.5s ease-in;
 	}
 	.logo-name{
 		font-size: 45px;
@@ -40,7 +40,7 @@ nav.menu-lateral{
 		color:#4169E1;
 		margin: -25px 15px 0px 0px;
 		padding-bottom: 12px;
-		animation: slideBotton 1.25s ease-in;
+		animation: slideBottonHeader 1.25s ease-in;
 	}
 
 	.logo-description{
@@ -49,7 +49,7 @@ nav.menu-lateral{
 		font-style: italic;
 		color:#3a3a3a;
 		padding-right: 10px;
-		animation: slideBotton 1s ease-in;
+		animation: slideBottonHeader 1s ease-in;
 	}
 }
 
@@ -114,7 +114,7 @@ ul{
 
 		a{
 			color: white;
-			animation: slideTop 1s ease-in;
+			animation: upScale 1s ease-in;
 		}
 		
 		.icon{
@@ -133,57 +133,50 @@ ul{
 
 }
 
-@keyframes slide{
-	0%{	
-		opacity: 0.6;
-		transform: translateX(-230px);
+@media (max-width: 480px) {  
+	nav.menu-lateral{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
 	}
 
-	50%{
-		opacity: 0.75;
+	.logo-name ,.logo-description,.txt-link{
+		display: none;
 	}
 
-	100%{
-		opacity: 1;
-		transform: translateX(0);
+	.logo{
+		padding: 5%
 	}
+
+	.logo-txt{
+		width: 90%;
+		font-size: 9rem !important;
+		padding: 0  !important;
+	}
+
+	li.item-menu a{
+		display: flex;
+		justify-content: center;
+		color: white;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 0;
+		height: 100% !important;
+
+	}
+	li.item-socialMidias{
+		display: flex;
+		flex-direction: column !important;
+		align-items: center !important;
+		background-color: black;
+		margin-bottom: 0px !important;
+	}
+
+
+
+
 }
-
-@keyframes scale {
-	0% {
-	  opacity: 0.5;
-	  transform: scale(0.1);
-	}
-  
-	100% {
-	  transform: scale(1);
-	  opacity: 1;
-	}
-  }
-
-@keyframes slideTop{
-	0%{
-		opacity: 0.1;
-		transform: scale(0.1);
-
-	}
-
-	100%{
-		opacity: 1;
-		transform: scale(1);
-	}
-
-}  
-
-@keyframes slideBotton{
-	0%{
-		opacity: 0.1;
-		transform: translateY(-20%);
-	}
-
-	100%{
-		opacity: 1;
-		transform: translateY(0);
-	}
-
-}  

@@ -1,11 +1,22 @@
 .container {
-  width: 100%;
   padding: 24px 48px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content:space-between;
   gap: 16px;
+
+  .skills{
+    animation: slideTop 1s linear;
+  }
+
+  .cardOne{
+    animation: slideBotton 1s linear
+  }
+
+  .cardTwo{
+    animation: slideBotton 1.25s linear
+  }
+
 
   .title {
     font-size: 24px;
@@ -59,5 +70,27 @@
       font-size: 0.8vw;
     }
     --p-tabs-active-bar-background: #4169e1;
+  }
+}
+
+@media (max-width: 480px) {
+  .container{
+
+    padding: 24px 24px;
+  }
+
+  .skills,.certificate{
+    width: 80%;
+  }
+
+  .certificate{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ::ng-deep{
+    .p-selectbutton{
+      display: none;
+    }
   }
 }

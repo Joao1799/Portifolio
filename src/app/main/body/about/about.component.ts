@@ -33,12 +33,14 @@ export class AboutComponent {
   iniciarEfeitoDigitacao() {
     setInterval(() => {
       setTimeout(() => {
-        this.index = (this.index + 1) % this.palavras.length; // Alterna para a próxima palavra
-        this.textoAtual = this.palavras[this.index]; // Atualiza o texto
-      }, 2980); // Troca de palavra após 3 segundos (meio do ciclo de animação de apagamento)
-    }, 7000); // Troca a palavra a cada 6 segundos
+        setTimeout(() => {
+          this.index = (this.index + 1) % this.palavras.length; 
+          this.textoAtual = this.palavras[this.index];
+        }, 3000); // Tempo para o efeito de digitação (meio do ciclo de animação de apagamento)
+      }, 1000); // Delay de 1 segundo (tempo inicial)
+    }, 6000);
   }
-
+  
 
   
   translateTXT(event: any) {

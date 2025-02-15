@@ -10,7 +10,7 @@
 			   </p-selectbutton>
 		   </ng-template>
    
-		   <p-tabs value="0" >
+		   <p-tabs value="0" scrollable>
 			   <p-tablist>
 				   <ng-template #previcon>
 					   <i class="pi pi-minus"></i>
@@ -62,7 +62,7 @@
 	</div>
 
 	<div class="certificate">
-		<p-card [style]="{ width: '200px', overflow: 'hidden' }">
+		<p-card class="cardOne" [style]="{ width: '200px', overflow: 'hidden' }">
 			<ng-template pTemplate="header">
 			  <img 
 				alt="Certificado Java" 
@@ -76,7 +76,7 @@
 			<p></p>
 		  </p-card>
 
-		  <p-card [style]="{ width: '200px', overflow: 'hidden' }">
+		  <p-card class="cardTwo" [style]="{ width: '200px', overflow: 'hidden' }">
 			<ng-template pTemplate="header">
 			  <img 
 				alt="Certificado Java" 
