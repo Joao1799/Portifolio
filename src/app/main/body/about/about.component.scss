@@ -6,10 +6,11 @@
 
 	.header {
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: row;
 		align-items:center ;
 		justify-content: space-between;
-		margin-bottom: 1.2vw; 
+		margin-bottom: 1rem; 
 		
 		.description {
 			display: flex;
@@ -20,7 +21,7 @@
 				color: #ffffff;
 				font-style: normal;
 				font-weight: 700;
-				font-size: 5.25vw; 
+				font-size: 5.25rem; 
 				font-family: sans-serif;
 				text-shadow: -0.4375rem 0.375rem 0.125rem #4169E1;	
 			}
@@ -34,12 +35,11 @@
 
 			.one{
 				animation: slideTop 0.75s  ;
-				font-size: 3.5vw;
+				font-size: 3.5rem;
 			}
 
 			.two{
 				animation: slideRight 1s linear ;
-				font-size: 5vw;
 				padding-left: 32px;
 			}
 
@@ -48,7 +48,7 @@
 				align-items: end;
 				gap: 16px;
 				white-space: nowrap;
-				font-size: 3.5vw;
+				font-size: 3.5rem;
 				animation: 
 				slideBotton 0.75s linear;
 				.teste{
@@ -61,7 +61,6 @@
 					blinkCursor 1s step-end infinite;
 				}
 			}
-
 		}
 
 		.imgPerfil{
@@ -75,8 +74,8 @@
 			animation: slideTop 0.75s  ;
 
 			.space {
-				height: 22vw; 
-				width: 22vw; 
+				height: 26rem; 
+				width: 26rem; 
 				border-radius: 63% 12% 61% 10% / 28% 25% 32% 15%; 
 				background-color: #4169E1;
 				box-shadow: 0px 2px 10px 1px #202020;
@@ -92,7 +91,7 @@
 		animation: upScale 1s linear;
 
 		.txt-me {
-			font-size: 1vw; 
+			font-size: 1.25rem; 
 		}
 
 		.footerCard{
@@ -115,13 +114,13 @@
 
 		.p-card-title {
 			color: #4169E1;
-			font-size: 1.35vw; 
+			font-size: 2rem; 
 			font-weight: bold;
 		}
 
 		.p-togglebutton-label, .p-togglebutton-icon {
 			color: #4169E1;
-			font-size: 0.8vw; 
+			font-size: 1rem; 
 		}
 	}
 }

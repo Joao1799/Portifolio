@@ -27,21 +27,24 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/assets",
-              "src/favicon.ico"            
+              "src/favicon.ico",
+              "src/404.html"            
               ],
             "styles": [
               "src/styles.scss",
               "node_modules/@flaticon/flaticon-uicons/css/all/all.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "baseHref": "/Portifolio/",  
+            "deployUrl": "/Portifolio/"
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "2mb",
+                  "maximumError": "3MB"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -85,7 +88,8 @@
             "inlineStyleLanguage": "scss",
             "assets": [
             "src/assets",
-            "src/favicon.ico"            
+            "src/favicon.ico",
+            "src/404.html"            
             ],
             "styles": [
               "src/styles.scss",
