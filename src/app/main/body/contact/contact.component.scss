@@ -35,13 +35,11 @@
 			h1{
 				font-size: 2rem;
 				white-space: normal;
-				word-wrap: break-word;
 			}
 			
 			p {
 				font-size: 1.4rem;
 				white-space: normal;
-				word-wrap: break-word;
 			}
 		}
 
@@ -78,7 +76,6 @@
 			font-size: 1.5rem;
 			padding-bottom: 16px;
 			white-space: normal;
-			word-wrap: break-word;
 		}
 		.body{
 			display: flex;
@@ -89,7 +86,6 @@
 			label{
 				font-size: 1.1rem;
 				white-space: normal;
-				word-wrap: break-word;
 			}
 
 			article{
@@ -119,7 +115,7 @@
 
 		.p-button{
 			background-color: var(--cor-terciaria);
-			border: 1px solid #4169e1;
+			border: 1px solid var(--cor-secundaria);
 		}
 		.p-button:hover{
 			background-color: var(--cor-terciaria);

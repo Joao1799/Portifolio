@@ -117,11 +117,28 @@
 	}
 
 	.main{
+		display: flex;
+		flex-direction: column;
+		
 		animation: upScale 1s linear;
 
+		p#title{
+			font-size: 3.25rem;
+			padding-left: 20px;
+			font-weight: bold;
+			color: var(--cor-secundaria);
+			text-shadow: 
+			-1px 1px 0px #afCBE3,
+			-2px 1px 0px #afCBE3,
+			-2px 1px 0px #afCBE3,
+			-2px 1px 0px #afCBE3,
+		}
+
 		.txt-me {
-			font-size: 1rem; 
+			font-size: 1.5rem; 
 			height: 10%;
+			padding-left: 0px;
+			width: 75%;
 		}
 
 		.footerCard{
@@ -136,10 +153,8 @@
 		.p-card{
 			animation: tamanho 2s linear;
 			transition: .7s;
-		}
-
-		.p-card:hover{
-			box-shadow: 0px 2px 10px 4px #ffffff;
+			background: transparent;
+			box-shadow: none;
 		}
 
 		.p-card-title {
@@ -149,7 +164,7 @@
 		}
 
 		.p-togglebutton-label, .p-togglebutton-icon {
-			color: #4169E1;
+			color: var(--cor-secundaria);
 			font-size: 1rem; 
 		}
 	}
@@ -208,6 +223,8 @@
 		max-height: 45vh !important;
 		font-size: 1rem !important;
 		overflow-y: scroll !important;
+		width: 100% !important;
+		text-align: justify;
 	}
 
 	.footerCard{
@@ -216,7 +233,7 @@
 
 	::ng-deep {
 		.p-card-title {
-			color: #4169E1;
+			color: var(--cor-secundaria);
 			font-size: 1.3rem !important;
 			font-weight: bold;
 		}

@@ -48,19 +48,19 @@ export class AboutComponent {
     const optionSelect = event.value; 
     
     if (optionSelect === 'en') {
-      this.text = `Hello! I’m a Software Engineering student at the Catholic University of Brasília, currently in my 7th semester.<br>
-        Throughout my academic journey, I’ve developed a strong knowledge base by leading and participating in challenging projects, which taught me the importance of structured planning and clearly abstracting ideas before moving on to execution.<br><br>
-        I have a proactive and patient profile, always focused on achieving both short- and long-term goals, constantly seeking the most efficient and innovative solutions to the challenges I face.<br><br>
-        I am proficient in technologies such as JavaScript, TypeScript, Angular, Node, and Java, and have a strong understanding of agile methodologies, including Scrum and Kanban. Additionally, I am fluent in English, which allows me to collaborate in diverse, global environments.<br><br>
-        This is a bit of my journey so far and how I constantly strive to improve, whether in technical development or in building efficient and collaborative solutions. If you’re interested in learning more or collaborating, feel free to get in touch!`;
+      this.text = `Software Engineer | 7th Semester<br><br>
+      Proactive and focused on innovative solutions, with experience in JavaScript, 
+      TypeScript, Angular, Node, and Java. Strong foundation in Scrum, Kanban, and structured planning. 
+      Fluent in English. Always seeking growth and new challenges.<br> 
+      Let’s build something amazing together! 🚀`;
       this.header = 'About Me'
     
       } else {
-      this.text = `Olá! Sou estudante de Engenharia de Software na Universidade Católica de Brasília, atualmente no 7º semestre.<br>
-        Ao longo da minha trajetória acadêmica, desenvolvi uma base de conhecimento sólida liderando e participando de projetos desafiadores, que me ensinaram a importância do planejamento estruturado e da abstração clara das ideias antes de partir para a execução.<br><br>
-        Tenho um perfil proativo e paciente, sempre focado em atingir objetivos de curto e longo prazo, buscando constantemente as soluções mais eficientes e inovadoras para os desafios que enfrento.<br><br>
-        Possuo conhecimento em tecnologias como JavaScript, TypeScript, Angular, Node e Java, além de um forte entendimento sobre metodologias ágeis, incluindo Scrum e Kanban. Além disso, sou fluente em inglês, o que me permite colaborar em ambientes globais e diversificados.<br><br>
-        Esse é um pouco do meu percurso até aqui e de como estou sempre em busca de evolução, seja no desenvolvimento técnico ou na construção de soluções eficientes e colaborativas. Se tiver interesse em saber mais ou colaborar, fique à vontade para entrar em contato!`;
+      this.text = `Engenheiro de Software | 7º semestre <br><br>
+      Proativo e focado em soluções inovadoras, com experiência em JavaScript, 
+      TypeScript, Angular, Node e Java. Forte base em Scrum, Kanban e planejamento estruturado.
+      Fluente em inglês. Sempre em busca de evolução e desafios.<br> 
+      Vamos construir algo incrível juntos? 🚀`;
       
       this.header = 'Sobre mim'
       }

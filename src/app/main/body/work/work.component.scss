@@ -29,6 +29,7 @@
 			flex-direction: row;
 			justify-content: space-between;
 			flex-wrap: wrap;
+			gap: 10px;
 		}
 	}
 
@@ -41,20 +42,13 @@
 	}
 
 	::ng-deep{
-		p-scrollpanel{
-			p{
-				word-break: break-all;
-
-			}
-		}
-
 		.secondBtn{			
 			.p-button{
-				background-color: #4169e1;
-				border: 1px solid #4169e1;
+				background-color: var(--cor-secundaria);
+				border: 1px solid var(--cor-secundaria);
 			}
 			.p-button:hover{
-				background-color: #4169e1d7;
+				background-color: var(--cor-secundaria);
 				border: 1px solid #ffffff;
 			}
 		}

@@ -11,7 +11,7 @@ nav.menu-lateral{
 }
 
 .item-menu.ativo {
-	background-color: #4169E1; 
+	background-color: var(--cor-secundaria); 
 	color: white;  
 }
 
@@ -77,10 +77,10 @@ ul{
 	}
 
 	li.item-menu:hover{
-		background-color: #4169E1;
+		background-color: var(--cor-secundaria);
 	}
 	li.item-menu::after{
-		background-color: #4169E1;
+		background-color: var(--cor-secundaria);
 	}
 
 	li.item-menu a{
@@ -126,7 +126,7 @@ ul{
 
 		.icon:hover{
 			i{
-				color: #4169E1;
+				color: var(--cor-secundaria);
 			}
 		}
 	}
