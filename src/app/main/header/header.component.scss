@@ -5,7 +5,7 @@
 }
 
 nav.menu-lateral{
-	width: 250px;
+	width: 100%;
 	height: 100%;
 	background-color: #202020;
 }
@@ -13,7 +13,7 @@ nav.menu-lateral{
 .item-menu.ativo {
 	background-color: #4169E1; 
 	color: white;  
-  }
+}
 
 
 .logo{
@@ -26,18 +26,18 @@ nav.menu-lateral{
 	background-color: black;
 
 	.logo-txt{
-		font-size: 150px;
+		font-size: 10rem;
 		font-family: sans-serif;
 		font-weight: bold;
-		color:white;
-		text-shadow: -10px 8px 2px #4169E1;
+		color: var(--cor-terciaria);
+		text-shadow: -10px 8px 2px var(--cor-quartearia);
 		animation: slideBottonHeader 1.5s ease-in;
 	}
 	.logo-name{
 		font-size: 45px;
 		font-weight: bold;
 		font-family: sans-serif;
-		color:#4169E1;
+		color: var(--cor-terciaria);
 		margin: -25px 15px 0px 0px;
 		padding-bottom: 12px;
 		animation: slideBottonHeader 1.25s ease-in;
@@ -88,14 +88,14 @@ ul{
 		align-items: flex-end;
 		color: white;
 		text-decoration: none;
-		font-size: 20px;
 		padding: 20px 4%;
 		margin-bottom: 30px;
 		gap: 30px;
+		font-size: 1.2rem;
 
 		.icon{
 			i{
-				font-size: 30px;
+				font-size: 1.5rem;
 			}
 		}
 	}
@@ -105,11 +105,11 @@ ul{
 		display: flex;
 		flex-direction: row;
 		align-items: flex-end;
+		justify-content: space-between;
 		text-decoration: none;
-		font-size: 20px;
+		width: 100%;
 		padding: 20px 4%;
 		margin-bottom: 30px;
-		gap: 40px;
 		cursor: default;
 
 		a{
@@ -120,7 +120,7 @@ ul{
 		.icon{
 			i{
 				cursor: pointer;
-				font-size: 40px;
+				font-size: 2.2rem;
 			}
 		}
 
@@ -150,8 +150,9 @@ ul{
 
 	.logo-txt{
 		width: 90%;
-		font-size: 9rem !important;
+		font-size: 6rem !important;
 		padding: 0  !important;
+		text-shadow: -5px 4px 3px var(--cor-quartearia) !important;
 	}
 
 	li.item-menu a{
@@ -174,6 +175,14 @@ ul{
 		align-items: center !important;
 		background-color: black;
 		margin-bottom: 0px !important;
+		gap: 30px !important;
+	}
+
+	.icon{
+		i{
+			cursor: pointer;
+			font-size: 1.2rem !important;
+		}
 	}
 
 

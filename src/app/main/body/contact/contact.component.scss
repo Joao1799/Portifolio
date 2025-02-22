@@ -109,20 +109,20 @@
 
 	}	
 	::ng-deep{
-		--p-inputtext-focus-border-color:#4169E1;
-		--p-select-focus-border-color: #4169E1;
-		--p-togglebutton-focus-ring-color:#4169E1;
+		--p-inputtext-focus-border-color: var(--cor-terciaria);
+		--p-select-focus-border-color: var(--cor-terciaria);
+		--p-togglebutton-focus-ring-color:var(--cor-terciaria)1;
 
 		.p-select-option.p-select-option-selected{
-			background: #4169e146;	
+			background: var(--cor-terciaria);	
 		}
 
 		.p-button{
-			background-color: #4169e1;
+			background-color: var(--cor-terciaria);
 			border: 1px solid #4169e1;
 		}
 		.p-button:hover{
-			background-color: #4169e1d7;
+			background-color: var(--cor-terciaria);
 			border: 1px solid #ffffff;
 		}
 	}
