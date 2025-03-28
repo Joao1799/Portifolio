@@ -21,27 +21,13 @@ export class AboutComponent {
   header: string | undefined;
   palavras = ["Web Developer", "Frontend Designer", "Creative Coder"];
   index = 0;
-  textoAtual = this.palavras[this.index];
+
   
   constructor() {}
   
   ngOnInit(){
     this.translateTXT({ value: this.selectedLanguage });
-    this.iniciarEfeitoDigitacao();
   }
-
-  iniciarEfeitoDigitacao() {
-    setInterval(() => {
-      setTimeout(() => {
-        setTimeout(() => {
-          this.index = (this.index + 1) % this.palavras.length; 
-          this.textoAtual = this.palavras[this.index];
-        }, 3000); // Tempo para o efeito de digitação (meio do ciclo de animação de apagamento)
-      }, 1000); // Delay de 1 segundo (tempo inicial)
-    }, 6000);
-  }
-  
-
   
   translateTXT(event: any) {
 

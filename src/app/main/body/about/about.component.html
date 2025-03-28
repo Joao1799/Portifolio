@@ -2,9 +2,9 @@
 	<div class="header">
 		<div class="left">
 			<div class ="description">
-				<span class="text one"> Hello, my name is</span>
-				<span class="text two"><a>João Victor</a></span>
-				<span class="text three">I'm a <a class=teste>{{textoAtual}}</a></span>
+				<p class="text one"> Olá, meu nome é</p>
+				<h1 class="text two"><a>João Victor</a></h1>
+				<p class="text three">Desenvolvedor WEB</p>
 			</div>
 		</div>	
 
@@ -24,13 +24,13 @@
 		<p-card >
 			<p class="txt-me" [innerHTML]="text"></p>
 			
-			<div class="footerCard">
+			<!-- <div class="footerCard">
 				<p-selectbutton 
 					[options]="txtOptions" [(ngModel)]="selectedLanguage" 
 					(onChange)="translateTXT($event)" optionLabel="label" 
 					optionValue="value" aria-labelledby="basic">
 				</p-selectbutton>
-			</div>
+			</div> -->
 		</p-card>		
 	</div>
 
