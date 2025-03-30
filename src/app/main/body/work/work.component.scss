@@ -9,6 +9,7 @@
 		justify-content:flex-start;
 		padding-bottom: 16px;
 		font-size: 24px;
+		color: var(--cor-fundo);
 		text-shadow: -3px 2px 0px rgb(129, 129, 129),
 		-1px 1px 10px rgb(0, 0, 0);
 		animation: slideTop 0.75s linear
@@ -42,6 +43,9 @@
 	}
 
 	::ng-deep{
+		.p-button{
+			color: var(--cor-fundo);
+		}
 		.secondBtn{			
 			.p-button{
 				background-color: var(--cor-secundaria);
@@ -52,5 +56,9 @@
 				border: 1px solid #ffffff;
 			}
 		}
+		.p-card-body {
+			background-color: #18181b;
+			border-radius: 8px;
+			}
 	}
 }

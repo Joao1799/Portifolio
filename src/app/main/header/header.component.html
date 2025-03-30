@@ -1,11 +1,12 @@
 <div class="container">
-	<nav class="menu-lateral">
-		<div class="logo">
+	<div class="logo">
+		<div class="body-logo">
 			<span class="logo-txt">J</span>
 			<span class="logo-name">João</span>
 			<span class="logo-description">Web-Developer</span>
 		</div>
-
+	</div>
+	<nav class="menu-lateral">
 		<ul>
 			<article>
 				<li class="item-menu one" [ngClass]="{'ativo': menuSelecionadoAtual === 'about'}">
@@ -33,9 +34,11 @@
 					</a>
 				</li>
 			</article>
-			
+		</ul>
+		
+		<ul id="midia">
 			<article> 
-			<li class="item-socialMidias">
+				<li class="item-socialMidias">
 					<a href="https://www.linkedin.com/in/joão-victor-68240a197" target="_blank">
 						<span class="icon"><i class="pi pi-linkedin"></i></span>
 					</a>
@@ -45,10 +48,9 @@
 					<a href="">
 						<span class="icon"><i class="pi pi-whatsapp"></i></span>
 					</a>
-			</li>
-		</article>
+				</li>
+			</article>
 		</ul>
-
 	</nav>
 </div>
 

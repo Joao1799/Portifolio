@@ -1,61 +1,65 @@
 .container{
-	height: 100%;
-	width: 100%;
+	min-height: 100vh;
+	width: 20vh;
 	background-color: #202020 ;
+	display: flex;
+	flex-direction: column;
 }
 
-nav.menu-lateral{
+.logo{
 	width: 100%;
-	height: 100%;
-	background-color: #202020;
+	background-color: black;
+	.body-logo{
+		display:flex ;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		height: 100%;
+		transition: 0.2s;
+
+		.logo-txt{
+			font-size: 9rem;
+			font-family: sans-serif;
+			font-weight: bold;
+			margin-left: 10px;
+			color: var(--cor-terciaria);
+			text-shadow: -10px 8px 2px var(--cor-quartearia);
+			animation: slideBottonHeader 1.5s ease-in;
+		}
+		.logo-name{
+			font-size: 3rem;
+			font-weight: bold;
+			font-family: sans-serif;
+			color: var(--cor-terciaria);
+			animation: slideBottonHeader 1.25s ease-in;
+		}
+		.logo-description{
+			font-size: 1.5rem;
+			font-weight:400;
+			font-style: italic;
+			color:#3a3a3a;
+			animation: slideBottonHeader 1s ease-in;
+		}
+	}
 }
+
+.menu-lateral{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+	background-color: #202020;
+	overflow-y: hidden;
+
 
 .item-menu.ativo {
 	background-color: var(--cor-secundaria); 
 	color: white;  
 }
 
-
-.logo{
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	width: 100%;
-	padding: 0px 0px 40px 0px;
-	padding-bottom: 12px;
-	background-color: black;
-
-	.logo-txt{
-		font-size: 10rem;
-		font-family: sans-serif;
-		font-weight: bold;
-		color: var(--cor-terciaria);
-		text-shadow: -10px 8px 2px var(--cor-quartearia);
-		animation: slideBottonHeader 1.5s ease-in;
-	}
-	.logo-name{
-		font-size: 45px;
-		font-weight: bold;
-		font-family: sans-serif;
-		color: var(--cor-terciaria);
-		margin: -25px 15px 0px 0px;
-		padding-bottom: 12px;
-		animation: slideBottonHeader 1.25s ease-in;
-	}
-
-	.logo-description{
-		font-size: 20px;
-		font-weight:400;
-		font-style: italic;
-		color:#3a3a3a;
-		padding-right: 10px;
-		animation: slideBottonHeader 1s ease-in;
-	}
-}
-
 ul{
 	list-style: none;
-	padding: 0px 0 40px 2%;
+	padding: 0px 0px 0px 2%;
 
 	li.item-menu{
 		transition: .2s;
@@ -101,7 +105,7 @@ ul{
 	}
 
 
-	li.item-socialMidias{
+	.item-socialMidias{
 		display: flex;
 		flex-direction: row;
 		align-items: flex-end;
@@ -133,59 +137,71 @@ ul{
 
 }
 
-@media (max-width: 480px) {  
-	nav.menu-lateral{
+#midia{
+	padding: 0 0 0 2%;
+}
+}
+
+
+@media(max-width: 920px){
+	.container{
+		min-height: 10vh !important;
 		width: 100%;
-		display: flex;
-		flex-direction: column;
+		display: flex !important;
+		flex-direction: row !important;
 	}
-
-	.logo-name ,.logo-description,.txt-link{
-		display: none;
-	}
-
 	.logo{
-		padding: 5%
-	}
-
-	.logo-txt{
-		width: 90%;
-		font-size: 6rem !important;
-		padding: 0  !important;
-		text-shadow: -5px 4px 3px var(--cor-quartearia) !important;
-	}
-
-	li.item-menu a{
-		display: flex;
-		justify-content: center;
-		color: white;
-	}
-
-	ul {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		padding: 0;
-		height: 100% !important;
-
-	}
-	li.item-socialMidias{
-		display: flex;
-		flex-direction: column !important;
-		align-items: center !important;
-		background-color: black;
-		margin-bottom: 0px !important;
-		gap: 30px !important;
-	}
-
-	.icon{
-		i{
-			cursor: pointer;
-			font-size: 1.2rem !important;
+		width: 20%;
+		.logo-txt{
+			font-size: clamp(6rem, 8vw, 8rem) !important;
+			margin-left: 0px !important;
+		}
+		.logo-name ,.logo-description{
+			display: none;
 		}
 	}
 
+	.menu-lateral{
+		width: 77% !important;
+	}
 
+	ul{
+		height: 100% !important;
+		width: 100% !important;
+		display: flex !important;
+		padding: 0 !important;
+	}
 
+	ul article{
+		display: flex !important;
+		flex-direction: row !important;
+		height: 100% !important;
+		width: 100%;
+		justify-content: space-evenly;
+		align-items: center;
+	}
 
+	#midia{
+		display: none !important;
+	}
+
+	li.item-menu{
+		display: flex;
+		align-items: center;
+		height: 50%;
+		padding: 8px;
+		border-radius: 8px;
+		
+		a{
+			gap: 8px !important;
+			display: flex !important;
+			align-items: end !important;
+			justify-content: center!important;
+			color: white !important;
+			padding: 0px 0 !important;
+			font-size: 1rem !important;
+			margin-bottom: 0px !important;
+			
+		}
+	}
 }
