@@ -33,4 +33,4 @@ export class App{
 setTimeout(() => {
   bootstrapApplication(AppComponent, appConfig)
     .catch((err) => console.error(err));
-}, 3000);
+}, 11000);
