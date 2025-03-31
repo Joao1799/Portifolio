@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "deploy": "ng build --configuration production --base-href '/Portifolio/' && gh-pages -d docs",
+    "deploy": "ng build --configuration production --base-href '/Portifolio/' && gh-pages -d docs/browser",
     "test": "ng test"
   },
   "private": true,
