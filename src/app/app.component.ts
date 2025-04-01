@@ -5,6 +5,7 @@ import { BodyComponent } from "./main/body/body.component";
 
 @Component({
   selector: 'app-root',
+  standalone:true,
   imports: [HeaderComponent,BodyComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

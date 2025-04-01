@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-skills',
+  standalone: true,
   imports: [
     FormsModule,
     CardModule,

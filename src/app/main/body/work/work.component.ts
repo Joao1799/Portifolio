@@ -5,6 +5,7 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
 
 @Component({
   selector: 'app-work',
+  standalone:true,
   imports: [CardModule,ButtonModule,ScrollPanelModule],
   templateUrl: './work.component.html',
   styleUrl: './work.component.scss'

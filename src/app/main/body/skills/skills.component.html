@@ -1,93 +1,107 @@
 <div class="container">
 	<div class="skills">
-		<p-card >
-			<ng-template #title> 
-			   <span>{{titleCard}}</span>
-			   <p-selectbutton 
-			   [options]="txtOptions" [(ngModel)]="selectedLanguage" 
-			   (onChange)="translateTXT($event)" optionLabel="label" 
-			   optionValue="value" aria-labelledby="basic">
-			   </p-selectbutton>
-		   </ng-template>
-   
-		   <p-tabs value="0" scrollable>
-			   <p-tablist>
-				   <ng-template #previcon>
-					   <i class="pi pi-minus"></i>
-				   </ng-template>
-				   <p-tab value="0">
-					   <p-avatar image="assets/programing.png" shape="circle"/>
-					   <span class="font-bold whitespace-nowrap">Angular</span>
-				   </p-tab>
-				   <p-tab value="1">
-					   <p-avatar image="assets/javascript.png" shape="circle" />
-					   <span class="font-bold whitespace-nowrap">Javascript</span>
-				   </p-tab>
-				   <p-tab value="2">
-					   <p-avatar image="assets/java1.png" shape="circle" />
-					   <span class="font-bold whitespace-nowrap">Java</span>
-				   </p-tab>
-				   <p-tab value="3">
-					   <p-avatar image="assets/social.png" shape="circle" />
-					   <span class="font-bold whitespace-nowrap">GitHub</span>
-				   </p-tab>
-				   <p-tab value="4">
-					   <p-avatar image="assets/abilities.png" shape="circle" />
-					   <span class="font-bold whitespace-nowrap">Soft Skills</span>
-				   </p-tab>
-   
-				   <ng-template #nexticon>
-					   <i class="pi pi-plus"></i>
-				   </ng-template>
-			   </p-tablist>
-			   <p-tabpanels>
-				   <p-tabpanel value="0">
-					   <p class="m-0" [innerHTML]="angularText"></p>
-				   </p-tabpanel>
-				   <p-tabpanel value="1">
-					   <p class="m-0" [innerHTML]="javaScriptText"></p>
-				   </p-tabpanel>
-				   <p-tabpanel value="2">
-					   <p class="m-0" [innerHTML]="javaText"></p>
-				   </p-tabpanel>
-				   <p-tabpanel value="3">
-					   <p class="m-0" [innerHTML]="gitSkillsText"></p>
-				   </p-tabpanel>
-				   <p-tabpanel value="4">
-					   <p class="m-0" [innerHTML]="softSkillsText"></p>
-				   </p-tabpanel>
-			   </p-tabpanels>
-		   </p-tabs>
-	   </p-card>
+		<div class="header">
+			<p-card>
+				<ng-template #title>
+					<span>Tecnologias e Ferramentas :</span>
+				</ng-template>
+			</p-card>
+		</div>
+
+
+		<div class="body">
+			<p-card class="cards cardOne">
+				<ng-template pTemplate="header">
+					<img class="custom-image" src="assets/linguagens/programing.png"/>
+				</ng-template>
+				<ng-template pTemplate="title">Angular</ng-template>
+				<ng-template pTemplate="subtitle">Framework Front-end</ng-template>
+				<p></p>
+			</p-card>
+
+			<p-card class="cards cardOne">
+				<ng-template pTemplate="header">
+					<img alt="JavaScript" class="custom-image" src="assets/linguagens/js.png"/>
+				</ng-template>
+				<ng-template pTemplate="title">JavaScript</ng-template>
+				<ng-template pTemplate="subtitle">Programação Web</ng-template>
+				<p></p>
+			</p-card>
+			
+			<p-card class="cards cardOne">
+				<ng-template pTemplate="header">
+					<img alt="TypeScript" class="custom-image" src="assets/linguagens/ts.png"/>
+				</ng-template>
+				<ng-template pTemplate="title">TypeScript</ng-template>
+				<ng-template pTemplate="subtitle">Superset do JavaScript</ng-template>
+				<p></p>
+			</p-card>
+			
+			<p-card class="cards cardOne">
+				<ng-template pTemplate="header">
+					<img alt="React" class="custom-image" src="assets/linguagens/react.png"/>
+				</ng-template>
+				<ng-template pTemplate="title">React</ng-template>
+				<ng-template pTemplate="subtitle">Biblioteca Front-end</ng-template>
+				<p></p>
+			</p-card>
+			
+			<p-card class="cards cardOne">
+				<ng-template pTemplate="header">
+					<img alt="Node.js" class="custom-image" src="assets/linguagens/node.png"/>
+				</ng-template>
+				<ng-template pTemplate="title">Node.js</ng-template>
+				<ng-template pTemplate="subtitle">Ambiente Back-end</ng-template>
+				<p></p>
+			</p-card>
+			
+			<p-card class="cards cardOne">
+				<ng-template pTemplate="header">
+					<img alt="MongoDB" class="custom-image" src="assets/linguagens/mongo.png"/>
+				</ng-template>
+				<ng-template pTemplate="title">MongoDB</ng-template>
+				<ng-template pTemplate="subtitle">Banco de Dados NoSQL</ng-template>
+				<p></p>
+			</p-card>
+			
+			<p-card class="cards cardOne">
+				<ng-template pTemplate="header">
+					<img alt="GitHub" class="custom-image" src="assets/linguagens/github.png"/>
+				</ng-template>
+				<ng-template pTemplate="title">GitHub</ng-template>
+				<ng-template pTemplate="subtitle">Controle de Versão</ng-template>
+				<p></p>
+			</p-card>
+		</div>
 	</div>
 
 	<div class="certificate">
-		<p-card class="cardOne" [style]="{ width: '200px', overflow: 'hidden' }">
-			<ng-template pTemplate="header">
-			  <img 
-				alt="Certificado Java" 
-				class="custom-image"
-				src="assets/javaCertificado.jpeg" 
-				style="width: 100%; height: auto; max-height: 150px; object-fit: cover;"
-			  />
-			</ng-template>
-			<ng-template pTemplate="title">Certificado Java</ng-template>
-			<ng-template pTemplate="subtitle"> Carga de 60 horas </ng-template>
-			<p></p>
-		  </p-card>
+		<div class="header">
+			<p-card>
+				<ng-template #title>
+					<span>Meus Certificados :</span>
+				</ng-template>
+			</p-card>
+		</div>
 
-		  <p-card class="cardTwo" [style]="{ width: '200px', overflow: 'hidden' }">
-			<ng-template pTemplate="header">
-			  <img 
-				alt="Certificado Java" 
-				class="custom-image"
-				src="assets/pythonCertificado.jpeg" 
-				style="width: 100%; height: auto; max-height: 150px; object-fit: cover;"
-			  />
-			</ng-template>
-			<ng-template pTemplate="title">Certificado Python</ng-template>
-			<ng-template pTemplate="subtitle"> Carga de 80 horas </ng-template>
-			<p></p>
-		  </p-card>
+		<div class="body">
+			<p-card class="cards cardTwo">
+				<ng-template pTemplate="header">
+					<img class="custom-image" src="assets/certificados/javaCertificado.jpeg"/>
+				</ng-template>
+				<ng-template pTemplate="title">Certificado Java</ng-template>
+				<ng-template pTemplate="subtitle"> Carga de 60 horas </ng-template>
+				<p></p>
+			</p-card>
+
+			<p-card class="cards cardTwo">
+				<ng-template pTemplate="header">
+					<img class="custom-image" src="assets/certificados/pythonCertificado.jpeg"/>
+				</ng-template>
+				<ng-template pTemplate="title">Certificado Python</ng-template>
+				<ng-template pTemplate="subtitle"> Carga de 80 horas </ng-template>
+				<p></p>
+			</p-card>
+		</div>
 	</div>
 </div>
