@@ -34,7 +34,7 @@ export class AboutComponent {
     const optionSelect = event.value; 
     
     if (optionSelect === 'en') {
-      this.text = `Software Engineer | 7th Semester<br><br>
+      this.text = `Software Engineer r<br><br>
       Proactive and focused on innovative solutions, with experience in JavaScript, 
       TypeScript, Angular, Node, and Java. Strong foundation in Scrum, Kanban, and structured planning. 
       Fluent in English. Always seeking growth and new challenges.<br> 
@@ -42,7 +42,7 @@ export class AboutComponent {
       this.header = 'About Me'
     
       } else {
-      this.text = `Engenheiro de Software | 7º semestre <br><br>
+      this.text = `Engenheiro de Software <br><br>
       Proativo e focado em soluções inovadoras, com experiência em JavaScript, 
       TypeScript, Angular, Node e Java. Forte base em Scrum, Kanban e planejamento estruturado.
       Fluente em inglês. Sempre em busca de evolução e desafios.<br> 
