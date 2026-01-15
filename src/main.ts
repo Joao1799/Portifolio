@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { provideAnimations} from '@angular/platform-browser/animations';
 import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
 import { animate, style, transition, trigger } from '@angular/animations';

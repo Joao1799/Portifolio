@@ -23,7 +23,9 @@
 						<a [href]="'https://github.com/Joao1799/LandingPageArq'" target="_blank">
 							<p-button label="Repositorio" [link]="true" icon="pi pi-github" severity="secondary"  [outlined]="true" styleClass="w-full" />
 						</a>
-						<p-button label="Visualizar" icon="pi pi-external-link" class="secondBtn" />
+						<a href="https://landingpagearq.vercel.app" target="_blank">
+							<p-button label="Visualizar" icon="pi pi-external-link" class="secondBtn" />
+						</a>
 						</div>
 				</ng-template>
 			</p-card>
@@ -44,16 +46,40 @@
 					<a [href]="'https://github.com/Joao1799/INOVOU---HomeFinder'" target="_blank">
 						<p-button label="Repositorio" [link]="true" icon="pi pi-github" severity="secondary"  [outlined]="true" styleClass="w-full" />
 					</a>
-					<p-button label="Visualizar" icon="pi pi-external-link" class="secondBtn" />
+					<a href="https://inovouweb.vercel.app" target="_blank">
+						<p-button label="Visualizar" icon="pi pi-external-link" class="secondBtn" />
+					</a>
 					</div>
 				</ng-template>
 			</p-card>
 	
 			<p-card class="card">
 				<ng-template #header>
+					<img class="custom-image"src="assets/imgsCards/gestor.png" />		
+				</ng-template>
+				<ng-template #title>Gestor Financeiro</ng-template>
+				<ng-template #subtitle> Desenvolvido em Angular/Java</ng-template>
+				<p-scrollpanel [style]="{ width: '100%', height: '10rem' }">
+					<p>
+						Sistema de gestão financeira, permite o gerenciamento de contas, movimentações, categorias, saldos e acompanhamento de dados por meio de uma interface moderna, responsiva e intuitiva.
+					</p>
+				</p-scrollpanel>
+				<ng-template #footer>
+					<div class="btnFooter">
+					<a [href]="'https://github.com/Joao1799/gestaoFinaceiraWEB'" target="_blank">
+						<p-button label="Repositorio" [link]="true" icon="pi pi-github" severity="secondary"  [outlined]="true" styleClass="w-full" />
+					</a>
+					<a href="https://github.com/Joao1799/gestaoFinaceiraWEB" target="_blank">
+						<p-button label="Em desenv" icon="pi pi-external-link" class="secondBtn" />
+					</a>
+					</div>
+				</ng-template>
+			</p-card>
+			<p-card class="card">
+				<ng-template #header>
 					<img class="custom-image"src="assets/imgsCards/pet.png" />		
 				</ng-template>
-				<ng-template #title>PetShop Frontend</ng-template>
+				<ng-template #title>My Pet Care</ng-template>
 				<ng-template #subtitle> Desenvolvido em Angular/PrimeNG</ng-template>
 				<p-scrollpanel [style]="{ width: '100%', height: '10rem' }">
 					<p>
@@ -65,14 +91,38 @@
 					<a [href]="'https://github.com/Joao1799/RegistrationPetShop'" target="_blank">
 						<p-button label="Repositorio" [link]="true" icon="pi pi-github" severity="secondary"  [outlined]="true" styleClass="w-full" />
 					</a>
-					<p-button label="Visualizar" icon="pi pi-external-link" class="secondBtn" />
+					<a href="https://petshopweb-seven.vercel.app" target="_blank">
+						<p-button label="Visualizar" icon="pi pi-external-link" class="secondBtn" />
+					</a>
+					</div>
+				</ng-template>
+			</p-card>
+	
+			<p-card class="card">
+				<ng-template #header>
+					<img class="custom-image"src="assets/imgsCards/wpp.png" />		
+				</ng-template>
+				<ng-template #title> Formulário WhatsApp API </ng-template>
+				<ng-template #subtitle>API - Node.js & Twilio</ng-template>
+
+				<p-scrollpanel [style]="{ width: '100%', height: '10rem' }">
+					<p>
+						API REST utilizando Node.js e a biblioteca Twilio para o envio de mensagens automáticas via WhatsApp. A API permite o envio de notificações personalizadas, integração com sistemas externos e automação de mensagens para melhorar a comunicação com os clientes.		
+					</p>
+				</p-scrollpanel>
+				<ng-template #footer>
+					<div class="btnFooter">
+					<a [href]="'https://github.com/Joao1799/NodeAPI_Wpp'" target="_blank">
+						<p-button label="Repositorio" [link]="true" icon="pi pi-github" severity="secondary"  [outlined]="true" styleClass="w-full" />
+					</a>
+					<!-- <p-button label="Visualizar" icon="pi pi-external-link" class="secondBtn" /> -->
 					</div>
 				</ng-template>
 			</p-card>
 
 			<p-card class="card">
 				<ng-template #header>
-					<img class="custom-image"src="assets/imgsCards/apinode.png" />		
+					<img class="custom-image" style="height: 200px;" src="assets/imgsCards/apinode.png" />		
 				</ng-template>
 				<ng-template #title>PetShop Backend</ng-template>
 				<ng-template #subtitle>API REST em Node.js</ng-template>
@@ -86,29 +136,7 @@
 					<a [href]="'https://github.com/Joao1799/PetShopServer'" target="_blank">
 						<p-button label="Repositorio" [link]="true" icon="pi pi-github" severity="secondary"  [outlined]="true" styleClass="w-full" />
 					</a>
-					<p-button label="Visualizar" icon="pi pi-external-link" class="secondBtn" />
-					</div>
-				</ng-template>
-			</p-card>
-			
-			<p-card class="card">
-				<ng-template #header>
-					<img class="custom-image"src="assets/imgsCards/wpp.png" />		
-				</ng-template>
-				<ng-template #title> WhatsApp Messaging API </ng-template>
-				<ng-template #subtitle>API - Node.js & Twilio</ng-template>
-
-				<p-scrollpanel [style]="{ width: '100%', height: '10rem' }">
-					<p>
-						API REST utilizando Node.js e a biblioteca Twilio para o envio de mensagens automáticas via WhatsApp. A API permite o envio de notificações personalizadas, integração com sistemas externos e automação de mensagens para melhorar a comunicação com os clientes.		
-					</p>
-				</p-scrollpanel>
-				<ng-template #footer>
-					<div class="btnFooter">
-					<a [href]="'https://github.com/Joao1799/NodeAPI_Wpp'" target="_blank">
-						<p-button label="Repositorio" [link]="true" icon="pi pi-github" severity="secondary"  [outlined]="true" styleClass="w-full" />
-					</a>
-					<p-button label="Visualizar" icon="pi pi-external-link" class="secondBtn" />
+					<!-- <p-button label="Visualizar" icon="pi pi-external-link" class="secondBtn" /> -->
 					</div>
 				</ng-template>
 			</p-card>

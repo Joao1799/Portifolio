@@ -17,11 +17,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "docs",
+            "outputPath": "dist/portifolio",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "deployUrl": "/Portifolio/",
-            "baseHref": "/Portifolio/",
             "polyfills": [
               "zone.js"
             ],
@@ -36,9 +34,7 @@
               "src/styles.scss",
               "node_modules/@flaticon/flaticon-uicons/css/all/all.css"
             ],
-            "scripts": [],
-            "baseHref": "/Portifolio/",  
-            "deployUrl": "/Portifolio/"
+            "scripts": []
           },
           "configurations": {
             "production": {
